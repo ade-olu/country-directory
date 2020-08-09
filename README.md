@@ -1,4 +1,4 @@
-# wejapa-countries
+# Wejapa-Countries
 
 ## Project setup
 ```
