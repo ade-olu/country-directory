@@ -1,11 +1,11 @@
 <template>
     <div class="container row">
-      <br>
+      <br><br>
       <h1 class="title">{{ title }}</h1>
       <br><br>
 
         <div class="column country-info">
-            <form> 
+            <form>
                    <!-- Countries -->
                     <div class="form-controls">
                         <label for="countries" class="select-label">Select Country</label>
@@ -22,7 +22,7 @@
                             <option :value="state.name" v-for="state in states" :key="state.id" class="count-option">{{ state.name}}</option>
                         </select>
                         <div v-if="stateError" :class="{empty: stateError}">
-                            <p>This Country Has No States!</p>
+                            <p>This Country Has No States</p>
                         </div>
                     </div>
                     <br><br>
@@ -34,7 +34,7 @@
                             <option :value="city.name" v-for="city in cities" :key="city.id" class="count-option">{{ city.name}}</option>
                         </select>
                         <div v-if="cityError" :class="{empty: cityError}">
-                            <p>This State Has No Cities!</p>
+                            <p>This State Has No Cities</p>
                         </div>
                     </div>      
             </form>
@@ -72,36 +72,36 @@ export default {
             cities: []
         }
     },
-    created(){
+    created() {
         this.$http.get('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/countries%2Bstates%2Bcities.json').then(
-            response=>{
+            response=> {
                 return response.json()
             }
-        ).then(data=>{
+        ).then(data=> {
             this.countries = data.slice(0, 251);
         })    
     },
     methods: {
-        onCountrySelect(event){
+        onCountrySelect(event) {
             const state = event.target.value
             const index = this.countries.findIndex((x=>x.name === state))
             const countryState = this.countries[index]['states']
-            if (countryState.length === 0){
+            if (countryState.length === 0) {
                 this.stateError = !this.stateError 
                 this.states = null   
                 this.cities = ""
-            } else{
+            } else {
                 this.states = countryState
                 this.stateError = false
             }
         },
-        onStateSelect(event){
+        onStateSelect(event) {
             const state = event.target.value
             const index = this.states.findIndex((x=>x.name === state))
             const city = this.states[index]['cities']
-            if (city.length === 0){
+            if (city.length === 0) {
                 this.cityError = !this.cityError
-            }else{
+            } else {
                 this.cities = city
                 this.cityError = false
             }
@@ -119,13 +119,13 @@ export default {
   text-align: center;
 }
 
-.country-info{
+.country-info {
     padding: 20px;
     font-family: 'Gilroy', sans-serif !important;
 }
 
 
-.count-select{
+.count-select  {
   width: 20em;
   height: 2.4em;
   display: block;
@@ -143,7 +143,8 @@ export default {
   -webkit-appearance: none;
   background-position-x: 17.8em;
 }
-.count-option{
+
+.count-option {
     display: block;
     margin-left: 20px;
     font-family: 'Gilroy', sans-serif !important;
@@ -169,19 +170,24 @@ export default {
   clear: both;
 }
 
-.empty{
+.empty {
     border: 1px solid;
     background: rgb(226, 64, 64);
     color: #fff;
     width: 20em;
     height: 3em;
-    padding-top: 12px;
     padding-left: 1em !important;
     border-radius: 6px;
     margin-top: 20px;
 }
 
-.selected-options{
+.empty p {
+    position: relative;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.selected-options {
     margin-top: 10px;
 }
 
