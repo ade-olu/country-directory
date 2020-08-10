@@ -5,7 +5,7 @@
       <br><br>
 
         <div class="column country-info">
-            <form>
+            <form> 
                    <!-- Countries -->
                     <div class="form-controls">
                         <label for="countries" class="select-label">Select Country</label>
