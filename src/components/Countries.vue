@@ -19,9 +19,9 @@
                     <div class="form-controls">
                         <label for="state" class="select-label">Select State</label>
                         <select name="states" id="states" v-model="selectedState" @change="onStateSelect($event)" class="count-select">
-                            <option :value="state.name" v-for="state in states" :key="state.id" class="count-option">{{ state.name}}</option>
+                            <option :value="state.name" v-for="state in states" :key="state.id" class="count-option">{{ state.name }}</option>
                         </select>
-                        <div v-if="stateError" :class="{empty: stateError}">
+                        <div v-if="stateError" :class="{ empty: stateError }">
                             <p>This country has no states. <br> Select another country.</p>
                         </div>
                     </div>
@@ -31,9 +31,9 @@
                     <div class="form-controls">
                         <label for="cities" class="select-label">Select City</label>
                         <select name="cities" id="cities" v-model="selectedCity" class="count-select">
-                            <option :value="city.name" v-for="city in cities" :key="city.id" class="count-option">{{ city.name}}</option>
+                            <option :value="city.name" v-for="city in cities" :key="city.id" class="count-option">{{ city.name }}</option>
                         </select>
-                        <div v-if="cityError" :class="{empty: cityError}">
+                        <div v-if="cityError" :class="{ empty: cityError }">
                             <p>This state has no cities. <br> Select another state or country.</p>
                         </div>
                     </div>      
