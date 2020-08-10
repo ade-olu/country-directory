@@ -22,7 +22,7 @@
                             <option :value="state.name" v-for="state in states" :key="state.id" class="count-option">{{ state.name}}</option>
                         </select>
                         <div v-if="stateError" :class="{empty: stateError}">
-                            <p>This Country Has No States</p>
+                            <p>This Country Has No States!</p>
                         </div>
                     </div>
                     <br><br>
@@ -34,7 +34,7 @@
                             <option :value="city.name" v-for="city in cities" :key="city.id" class="count-option">{{ city.name}}</option>
                         </select>
                         <div v-if="cityError" :class="{empty: cityError}">
-                            <p>This State Has No Cities</p>
+                            <p>This State Has No Cities!</p>
                         </div>
                     </div>      
             </form>
