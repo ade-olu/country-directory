@@ -283,10 +283,6 @@ export default {
     padding-left: 8% !important;
 }
 
-.column-2 {
-  margin-top: 150% !important;
-}
-
 .count-select {
   width: 17em !important;
   background-position-x: 14.8em;
