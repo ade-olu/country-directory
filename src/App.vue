@@ -23,7 +23,7 @@ export default {
   margin: 0;
 }
 
-body{
+body {
   margin: 0;
 }
 
