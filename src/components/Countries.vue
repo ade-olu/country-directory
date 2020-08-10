@@ -10,7 +10,7 @@
                     <div class="form-controls">
                         <label for="countries" class="select-label">Select Country</label>
                         <select name="countries" id="countries" v-model="selectedCountry" @change="onCountrySelect($event)" class="count-select">
-                            <option :value=country.name v-for="country in countries" :key="country.id" class="count-option">{{ country.name }}</option>
+                            <option :value="country.name" v-for="country in countries" :key="country.id" class="count-option">{{ country.name }}</option>
                         </select>
                     </div>
                     <br><br>
