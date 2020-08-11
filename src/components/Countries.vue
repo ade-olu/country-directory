@@ -184,14 +184,16 @@ export default {
     float: left;
     width: 50%;
     padding-left: 20% !important;
-    height: 100vh;
+    margin-bottom: 2em !important;
+    height: auto;
 }
 
 .column-2 {
     float: left;
     width: 50%;
     padding-left: 5% !important;
-    height: 100vh;
+    margin-bottom: 2em !important;
+    height: auto;
 }
 
 .row:after {
