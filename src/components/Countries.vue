@@ -139,6 +139,7 @@ export default {
   top: 50%;
   left: 5%;
   transform: translate(-5%, -50%);
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .title {
