@@ -1,5 +1,11 @@
 <template>
     <div class="container row">
+
+        <!-- Nav -->
+    <div class="nav">
+      <img src="../assets/logo.png" class="logo"/>
+      </div>
+
       <br><br>
       <h1 class="title">{{ title }}</h1>
       <br><br>
@@ -115,6 +121,24 @@ export default {
 <style scoped>
 @import url('https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
 
+.nav {
+  position: relative;
+  width: 100%;
+  height: 4em;
+  background: #000;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.logo {
+  position: relative;
+  width: 42px !important;
+  height: auto !important;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+}
+
 .title {
   text-align: center;
 }
@@ -123,7 +147,6 @@ export default {
     padding: 20px;
     font-family: 'Gilroy', sans-serif !important;
 }
-
 
 .count-select  {
   width: 20em;
