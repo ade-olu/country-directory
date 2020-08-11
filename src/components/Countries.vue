@@ -3,7 +3,9 @@
 
         <!-- Nav -->
     <div class="nav">
+    <a href="index.html">
       <img src="../assets/logo.png" class="logo"/>
+      </a>
       </div>
 
       <br><br>
