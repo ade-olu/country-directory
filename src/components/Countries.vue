@@ -132,6 +132,11 @@ export default {
   padding: 0 !important;
 }
 
+.nav a {
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
 .logo {
   position: relative;
   width: 42px !important;
@@ -139,7 +144,6 @@ export default {
   top: 50%;
   left: 5%;
   transform: translate(-5%, -50%);
-  -webkit-tap-highlight-color: transparent !important;
 }
 
 .title {
