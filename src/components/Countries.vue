@@ -235,14 +235,12 @@ export default {
     float: left;
     width: 50%;
     padding-left: 12% !important;
-    height: 100vh;
 }
 
 .column-2 {
     float: left;
     width: 50%;
     padding-left: 10% !important;
-    height: 100vh;
 }
 }
 
@@ -252,14 +250,12 @@ export default {
     float: left;
     width: 50%;
     padding-left: 8% !important;
-    height: 100vh;
 }
 
 .column-2 {
     float: left;
     width: 50%;
     padding-left: 10% !important;
-    height: 100vh;
 }
 }
 
