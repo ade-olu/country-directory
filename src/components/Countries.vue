@@ -27,7 +27,7 @@
                     <div class="form-controls">
                         <label for="state" class="select-label">Select State</label>
                         <select name="states" id="states" v-model="selectedState" @change="onStateSelect($event)" class="count-select">
-                            <option :value="state.name" v-for="state in states" :key="state.id" class="count-option">{{ state.name}}</option>
+                            <option :value="state.name" v-for="state in states" :key="state.id" class="count-option">{{ state.name }}</option>
                         </select>
                         <div v-if="stateError" :class="{empty: stateError}">
                             <p>This Country Has No States!</p>
@@ -39,7 +39,7 @@
                     <div class="form-controls">
                         <label for="cities" class="select-label">Select City</label>
                         <select name="cities" id="cities" v-model="selectedCity" class="count-select">
-                            <option :value="city.name" v-for="city in cities" :key="city.id" class="count-option">{{ city.name}}</option>
+                            <option :value="city.name" v-for="city in cities" :key="city.id" class="count-option">{{ city.name }}</option>
                         </select>
                         <div v-if="cityError" :class="{empty: cityError}">
                             <p>This State Has No Cities!</p>
@@ -184,7 +184,7 @@ export default {
     float: left;
     width: 50%;
     padding-left: 20% !important;
-    margin-bottom: 2em !important;
+    margin-bottom: 3em !important;
     height: auto;
 }
 
@@ -192,7 +192,7 @@ export default {
     float: left;
     width: 50%;
     padding-left: 5% !important;
-    margin-bottom: 2em !important;
+    margin-bottom: 3em !important;
     height: auto;
 }
 
@@ -265,13 +265,13 @@ export default {
     float: left;
     width: 50%;
     padding-left: 8% !important;
-    margin-bottom: 2em !important;
+    margin-bottom: 3em !important;
     height: auto;
 }
 
 .column-2 {
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     padding-left: 8% !important;
     left: 50%;
     transform: translateX(-50%) !important;
