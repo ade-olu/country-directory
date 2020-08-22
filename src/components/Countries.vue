@@ -69,7 +69,7 @@ export default {
   name: 'countries',
   data() {
      return {
-            title: 'WeJapa Countries',
+            title: 'Country Directory',
             selectedCountry: "",
             selectedState: "",
             selectedCity: "",
