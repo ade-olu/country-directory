@@ -8,7 +8,7 @@
 import countries from './components/Countries.vue'
 
 export default {
-  name: 'App'
+  name: 'App',
   components: {
     'countries': countries
   }
